@@ -3,10 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@media(mix-width: 600px){
+.conatiner{
+    /* margin: 0 auto; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-child{
+    flex: 1;
+}
+@media(min-width: 600px){
+    .conatiner{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-child{
+        flex: 1;
+    }
     .sub{
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: row;
+    }
+    .row{
+        display: flex;
     }
 }
