@@ -15,9 +15,11 @@
     --Lightgrayop: hsla(0, 0%, 81%, 70%);
     --Lightgrayishblue: hsl(210, 46%, 95%);
 }
-/* body{
-    margin: 20px auto;
-} */
+
+body{
+    background-color: var(--Lightgrayishblue);
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -25,68 +27,54 @@
 }
 
 .inner-container{
-    max-width: 600px;
-    width: 100%;
-    position: absolute;
+    height: 90%;
+    width: 90%;
+    max-width: 400px;
     top: 50%;
     left: 50%;
+    position: absolute;
     transform: translate(-50%,-50%);
-    display: grid;
-    /* grid-template-rows: 1fr 1fr; */
+    /* background-color: red; */
 }
-.box1{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.wrapper1{
+
+.box{
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
-.wrapper2{
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-}
-.box2{
-    display: grid;
-    grid-template-rows: 1fr;
-}
-@media (min-width: 660px){
+
+@media (min-width: 800px) {
     .container{
         width: 100%;
         height: 100vh;
-        /* position: relative; */
+        position: relative;
     }
+    
     .inner-container{
-        max-width: 1940px;
-        height: 100vh;
-        /* position: absolute;
-        display: grid;
+        height: 70%;
+        width: 90%;
+        max-width: 1920px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%); */
+        position: absolute;
+        transform: translate(-50%,-50%);
+        /* background-color: red; */
+    }
+    .box{
         grid-template-columns: 2fr 1fr;
+        /* grid-template-rows: 0; */
     }
     .box1{
         display: grid;
-        /* grid-template-columns: 1fr; */
-        grid-template-rows: 30% 30%;
-        background-color: red;
+        grid-template-rows: 1fr 1fr;
     }
     .wrapper1{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /* gap: 20px; */
-        background-color: orange;
+        /* grid-template-rows: 0; */
     }
     .wrapper2{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        /* gap: 20px; */
-        background-color: beige;
-    }
-    .box2{
-        display: grid;
-        grid-template-rows: 1fr;
-        background-color: blue;
+        /* grid-template-rows: 0; */
     }
 }
