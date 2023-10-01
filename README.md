@@ -1,6 +1,8 @@
 <h1>Netlify Links</h1>
 
 <a href="https://comforting-cat.netlify.app/testimonials-grid-section-main/">testimonials-grid-section-main/</a><br><br>
+<a href="https://comforting-cat.netlify.app/fylo-data-storage-component-master/">fylo-data-storage-component-master/</a><br><br>
+
 
 # Frontend-Mentor-Junior
 
